@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications - Abishek K</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .certifications {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .cert-card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .cert-card:hover {
+      transform: translateY(-4px);
+    }
+    .cert-card h3 {
+      margin: 0 0 10px;
+      color: #0073e6;
+    }
+    .cert-card p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .cert-card h4 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+    .cert-card ul {
+      margin: 0 0 10px 20px;
+    }
+    .cert-card img {
+      max-width: 300px;
+      display: block;
+      margin-top: 10px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .cert-card img:hover {
+      transform: scale(1.05);
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding: 60px 20px;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      text-align: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+    }
+    .lightbox:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Certifications Section -->
+  <section class="certifications">
+    <h2>My Certifications</h2>
+    <p>Here are some certifications I have earned to demonstrate my skills in cybersecurity and penetration testing:</p>
+
+    <!-- eJPT -->
+    <div class="cert-card">
+      <h3>eLearnSecurity Junior Penetration Tester (eJPT)</h3>
+      <p>
+        The Junior Penetration Tester (eJPT) certification validates knowledge across penetration testing life cycle, 
+        covering assessment methodologies, host & network auditing, penetration testing, and web application security.
+      </p>
+      <h4>Skills / Knowledge:</h4>
+      <ul>
+        <li>Assessment Methodologies</li>
+        <li>Web Application Penetration Testing</li>
+        <li>Host & Networking Penetration Testing</li>
+        <li>Host & Networking Auditing</li>
+      </ul>
+      <p><strong>Issued on:</strong> October 19, 2024</p>
+      <p><strong>Expires on:</strong> October 19, 2027</p>
+      <a href="#ejpt-lightbox">
+        <img src="assests/certs/EJPT.png" alt="eJPT Certificate">
+      </a>
+    </div>
+
+    <!-- CRTA -->
+    <div class="cert-card">
+      <h3>Certified Red Team Analyst (CRTA)</h3>
+      <p>
+        The CRTA certification is earned by completing the CyberWarFare Labs Red Team Analyst course 
+        and passing a 24-hour practical exam. It validates advanced skills in red teaming, adversary simulation, 
+        and enterprise security testing.
+      </p>
+      <h4>Skills / Knowledge:</h4>
+      <ul>
+        <li>Red Teaming & Adversary Simulation</li>
+        <li>Understanding MITRE ATT&CK Framework</li>
+        <li>Internal & External Recon</li>
+        <li>Kerberos-based Attacks in Active Directory</li>
+        <li>Stealth Pivoting & Lateral Movement</li>
+        <li>Windows & Enterprise Security</li>
+      </ul>
+      <p><strong>Issued on:</strong> March 4, 2025</p>
+      <p><strong>Expires on:</strong> Does not expire</p>
+      <a href="#crta-lightbox">
+        <img src="assests/certs/CRTA.png" alt="CRTA Certificate">
+      </a>
+    </div>
+  </section>
+
+  <!-- Lightbox Modals -->
+  <div id="ejpt-lightbox" class="lightbox">
+    <a href="#">
+      <img src="assests/certs/EJPT.png" alt="eJPT Certificate Large">
+    </a>
+  </div>
+
+  <div id="crta-lightbox" class="lightbox">
+    <a href="#">
+      <img src="assests/certs/CRTA.png" alt="CRTA Certificate Large">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Abishek K | Portfolio Website</p>
+  </footer>
+</body>
+</html>
